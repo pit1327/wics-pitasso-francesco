@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.input-container, .entries-container, .total-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.input-container h2, .entries-container h2, .total-container h2 {
+  margin-top: 0;
+}
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+  width: calc(100% - 10px);
+  padding: 5px;
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus,
+button:active {
+  background-color: #28a745;
+}
+
+.entry {
+  margin-bottom: 10px;
+}
+
+.balance {
+  font-weight: bold;
+  font-size: 1.2em;
+}
